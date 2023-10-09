@@ -9,16 +9,22 @@
 /* Begin PBXBuildFile section */
 		0471523A2ACEBCB00027E21D /* ChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047152392ACEBCB00027E21D /* ChatAppApp.swift */; };
 		0471523C2ACEBCB00027E21D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471523B2ACEBCB00027E21D /* ContentView.swift */; };
-		0471523E2ACEBCB30027E21D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0471523D2ACEBCB30027E21D /* Assets.xcassets */; };
 		047152412ACEBCB30027E21D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047152402ACEBCB30027E21D /* Preview Assets.xcassets */; };
+		0471524B2ACEBF5A0027E21D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471524A2ACEBF5A0027E21D /* Message.swift */; };
+		047152502ACEC1250027E21D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471524F2ACEC1250027E21D /* MessageView.swift */; };
+		04E88DF02AD452E0007CBA4F /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E88DEF2AD452E0007CBA4F /* MessageCell.swift */; };
+		04E88DF22AD46AEC007CBA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E88DF12AD46AEC007CBA4F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		047152362ACEBCB00027E21D /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047152392ACEBCB00027E21D /* ChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppApp.swift; sourceTree = "<group>"; };
 		0471523B2ACEBCB00027E21D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0471523D2ACEBCB30027E21D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047152402ACEBCB30027E21D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0471524A2ACEBF5A0027E21D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0471524F2ACEC1250027E21D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		04E88DEF2AD452E0007CBA4F /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		04E88DF12AD46AEC007CBA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +57,10 @@
 		047152382ACEBCB00027E21D /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				0471524C2ACEC05F0027E21D /* View */,
+				047152472ACEBF220027E21D /* Models */,
 				047152392ACEBCB00027E21D /* ChatAppApp.swift */,
-				0471523B2ACEBCB00027E21D /* ContentView.swift */,
-				0471523D2ACEBCB30027E21D /* Assets.xcassets */,
+				04E88DF12AD46AEC007CBA4F /* Assets.xcassets */,
 				0471523F2ACEBCB30027E21D /* Preview Content */,
 			);
 			path = ChatApp;
@@ -65,6 +72,24 @@
 				047152402ACEBCB30027E21D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		047152472ACEBF220027E21D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0471524A2ACEBF5A0027E21D /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0471524C2ACEC05F0027E21D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0471523B2ACEBCB00027E21D /* ContentView.swift */,
+				0471524F2ACEC1250027E21D /* MessageView.swift */,
+				04E88DEF2AD452E0007CBA4F /* MessageCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +150,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E88DF22AD46AEC007CBA4F /* Assets.xcassets in Resources */,
 				047152412ACEBCB30027E21D /* Preview Assets.xcassets in Resources */,
-				0471523E2ACEBCB30027E21D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047152502ACEC1250027E21D /* MessageView.swift in Sources */,
 				0471523C2ACEBCB00027E21D /* ContentView.swift in Sources */,
+				0471524B2ACEBF5A0027E21D /* Message.swift in Sources */,
 				0471523A2ACEBCB00027E21D /* ChatAppApp.swift in Sources */,
+				04E88DF02AD452E0007CBA4F /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
